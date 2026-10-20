@@ -7,7 +7,7 @@ public class IslandTile : MonoBehaviour
 
     public void DamageIsland()
     {
-        // Stable island never breaks
+        // Stable island never breaks/becomes smaller
         if (isStable)
         {
             return;
@@ -17,7 +17,7 @@ public class IslandTile : MonoBehaviour
 
         Debug.Log("Island Health: " + health);
 
-        // Make the island look weaker
+        // Make the island look smaller
         if (health == 2)
         {
             transform.localScale *= 0.9f;
